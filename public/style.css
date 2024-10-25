@@ -1,0 +1,103 @@
+:root {
+  --border: #bbb;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root, ::backdrop {
+    --bg: #f3f1e8;
+    --accent-bg: #FFF;
+    --text: #364152;
+    --text-light: #be2731;
+    --border: #364152;
+    --accent: #be2731;
+    --accent-hover: #be2731;
+    --accent-text: var(--bg);
+    --code: #d81b60;
+    --preformatted: #444;
+    --marked: #fd3;
+    --disabled: #efefef;
+  }
+}
+
+body {
+  grid-template-columns: 1fr min(60rem, 90%) 1fr;
+}
+
+main {
+  padding-top: 0;
+  margin-top: 0;
+}
+#top {
+  background-color:#364152;
+}
+#top > h1 {
+  font-size: 3rem;
+  margin: 1rem auto;
+  color:var(--accent-bg);
+}
+#top > h2 {
+  font-size: 2rem;
+  margin: 1rem auto -0.5rem auto;
+  font-style: italic;
+  color: var(--bg);
+}
+#top >nav {
+  margin-top:2rem;
+}
+#top >nav > a {
+  color: var(--bg);
+  border-color: var(--bg);
+}
+#top >nav > a:hover {
+  background-color: var(--bg);
+  color:var(--accent);
+  /*border-color:var(--accent);*/
+}
+
+section {
+  border-bottom: none;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+section > h2 {
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+article {
+  break-inside: avoid-page;
+}
+
+article > h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+article > h4 {
+  margin-top: 0;
+  color: var(--text-light);
+}
+
+article > aside {
+  width: auto;
+  text-align: right;
+}
+
+.top-link {
+  float: right;
+}
+
+.top-link > a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.top-link > a:hover {
+  text-decoration: underline;
+}
+.contact {
+  text-align: right;
+  width: auto;
+}
