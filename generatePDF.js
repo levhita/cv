@@ -14,7 +14,7 @@ const bodyBoundingBox = await body.boundingBox();
 
 await page.pdf({
   path: 'public/levhita-cv.pdf',
-  height: `${bodyBoundingBox.height * .7 + 1}px`,
+  height: `${bodyBoundingBox.height * .7}px`,
   printBackground: true,
   waitForFonts: true,
   scale: .7
