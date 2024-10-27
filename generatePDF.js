@@ -13,7 +13,7 @@ const body = await page.$('html');
 const bodyBoundingBox = await body.boundingBox();
 
 await page.pdf({
-  path: 'public/levhita-cv.pdf',
+  path: 'public/levhita-fullstack-cv.pdf',
   height: `${bodyBoundingBox.height * .7}px`,
   printBackground: true,
   waitForFonts: true,
