@@ -5,7 +5,7 @@ const page = await browser.newPage();
 
 await page.setViewport({ width: 1080, height: 1024 });
 
-await page.goto('http://127.0.0.1:5173/?print',);
+await page.goto('http://localhost:5173/?print',);
 
 await page.waitForNetworkIdle({});
 
